@@ -14,7 +14,7 @@ public class WelcomeController
     @Value("${welcome.message:test}")
     private String message = "Hello world";
 
-    @RequestMapping("/")
+    @RequestMapping("/welcome")
     public String welcome(Map<String, Object> model)
     {
         model.put("message", this.message);
